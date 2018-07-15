@@ -1,0 +1,27 @@
+### STS ###
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# Eclipse & Maven
+log/
+target/
+.classpath
+.project
+.settings/
+.mvn/
+/mvnw.cmd
+/mvnw
+
+# Packages #
+############
+*.jar
+*.war
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Log file
+*.log
