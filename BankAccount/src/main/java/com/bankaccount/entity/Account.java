@@ -9,6 +9,7 @@ import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -31,7 +32,7 @@ public abstract class Account implements Serializable {
 	 */
 	private static final long serialVersionUID = -265342183852147454L;
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	private Date creationDate;
 	private double balance;
@@ -41,14 +42,11 @@ public abstract class Account implements Serializable {
 	@JoinColumn(name = "customer")
 	private Customer customer;
 
-	public Account(Date creationDate, double balance, Customer customer) {
+	public Account(Date creationDate, Customer customer) {
 		super();
 		this.creationDate = creationDate;
-		this.balance = balance;
+		this.balance = 0L;
 		this.customer = customer;
 	}
-
-	
-	
 
 }
