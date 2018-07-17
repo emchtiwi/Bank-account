@@ -87,4 +87,19 @@ public class OperationDaoTest {
 		assertThat(withdrawalFound).isNull();
 	}
 
+	@Test
+	public void c_verifyOperationsNumber() throws Exception {
+
+		/**
+		 * When
+		 */
+		Account found = accountDao.findByAccountId(1L);
+
+		/**
+		 * Then
+		 */
+		assertThat(found.getOperations()).isNotEmpty().hasSize(2);
+
+	}
+
 }
