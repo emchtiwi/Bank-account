@@ -16,7 +16,7 @@ public class AccountDaoImpl implements AccountDao {
 	EntityManager em;
 
 	/**
-	 * Method to get account by id
+	 * Method to get account by its id
 	 */
 	@Override
 	public Account findByAccountId(final Long id) {
@@ -24,7 +24,7 @@ public class AccountDaoImpl implements AccountDao {
 	}
 
 	/**
-	 * Method to create an new account
+	 * Method to create a new account
 	 */
 	@Override
 	public Account createAccount(final Account account) {

@@ -1,6 +1,7 @@
 package com.bankaccount.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class Customer implements Serializable {
 	private String firstName;
 	private String lastName;
 	private Date birthDate;
-	@OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
 	private List<Account> accounts;
 
 	public Customer(String firstName, String lastName, Date birthDate) {
@@ -36,6 +37,7 @@ public class Customer implements Serializable {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthDate = birthDate;
+		this.accounts = new ArrayList<>();
 	}
 
 }

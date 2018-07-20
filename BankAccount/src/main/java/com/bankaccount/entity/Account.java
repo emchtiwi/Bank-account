@@ -1,6 +1,7 @@
 package com.bankaccount.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +26,7 @@ import lombok.NoArgsConstructor;
 @DiscriminatorColumn(name = "ACCOUNT_TYPE", discriminatorType = DiscriminatorType.STRING)
 @Data
 @NoArgsConstructor
-public abstract class Account implements Serializable {
+public class Account implements Serializable {
 
 	/**
 	 * 
@@ -36,7 +37,7 @@ public abstract class Account implements Serializable {
 	private Long id;
 	private Date creationDate;
 	private double balance;
-	@OneToMany(mappedBy = "account", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "account", fetch = FetchType.EAGER)
 	private List<Operation> operations;
 	@ManyToOne()
 	@JoinColumn(name = "customer")
@@ -46,6 +47,7 @@ public abstract class Account implements Serializable {
 		super();
 		this.creationDate = creationDate;
 		this.balance = 0L;
+		this.operations = new ArrayList<>();
 		this.customer = customer;
 	}
 

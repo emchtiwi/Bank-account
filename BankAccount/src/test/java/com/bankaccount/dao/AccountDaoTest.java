@@ -30,7 +30,7 @@ public class AccountDaoTest {
 	CustomerDao customerDao;
 
 	@Test
-	public void a_findByCurrentAccountIdShouldReturnCurrentAccount() throws Exception {
+	public void a_findByAccountIdShouldReturnAccount() throws Exception {
 
 		/**
 		 * Given
@@ -51,10 +51,11 @@ public class AccountDaoTest {
 		assertThat(found.getCreationDate()).isEqualTo(currentAccount.getCreationDate());
 		assertThat(found.getBalance()).isEqualTo(currentAccount.getBalance());
 		assertThat(found.getCustomer().getId()).isEqualTo(currentAccount.getCustomer().getId());
+		assertThat(found.getOperations()).isEmpty();
 	}
 
 	@Test
-	public void b_findByCurrentAccountIdWhenNoCurrentAccountShouldReturnNull() throws Exception {
+	public void b_findByAccountIdWhenNoAccountShouldReturnNull() throws Exception {
 
 		/**
 		 * When

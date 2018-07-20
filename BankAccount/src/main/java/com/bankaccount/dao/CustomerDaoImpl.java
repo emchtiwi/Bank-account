@@ -16,7 +16,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	private EntityManager em;
 
 	/**
-	 * Method to get customer by id
+	 * Method to get customer by his id
 	 */
 	@Override
 	public Customer findByCustomerId(final Long id) {
@@ -24,7 +24,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	}
 
 	/**
-	 * Method to create an new customer
+	 * Method to create a new customer
 	 */
 	@Override
 	public Customer createCustomer(final Customer customer) {

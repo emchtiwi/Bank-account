@@ -88,7 +88,7 @@ public class OperationDaoTest {
 	}
 
 	@Test
-	public void c_verifyOperationsNumber() throws Exception {
+	public void c_verifyNumberOperations() throws Exception {
 
 		/**
 		 * When

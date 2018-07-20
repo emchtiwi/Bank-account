@@ -16,18 +16,18 @@ public class OperationDaoImpl implements OperationDao {
 	EntityManager em;
 
 	/*
-	 * Method to get operation by number
+	 * Method to get operation by its number
 	 */
 	@Override
-	public Operation findByOperationNumber(Long number) {
+	public Operation findByOperationNumber(final Long number) {
 		return em.find(Operation.class, number);
 	}
 
 	/*
-	 * Method to create an new operation
+	 * Method to create a new operation
 	 */
 	@Override
-	public Operation createOperation(Operation operation) {
+	public Operation createOperation(final Operation operation) {
 		Operation saved = em.merge(operation);
 		em.flush();
 		return saved;
