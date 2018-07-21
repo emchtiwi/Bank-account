@@ -19,6 +19,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.bankaccount.dao.AccountDao;
+import com.bankaccount.dto.AccountDto;
+import com.bankaccount.dto.CurrentAccountDto;
 import com.bankaccount.entity.Account;
 import com.bankaccount.entity.CurrentAccount;
 

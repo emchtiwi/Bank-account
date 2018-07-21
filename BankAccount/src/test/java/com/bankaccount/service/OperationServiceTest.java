@@ -22,6 +22,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.bankaccount.dao.AccountDao;
 import com.bankaccount.dao.OperationDao;
+import com.bankaccount.dto.AccountDto;
+import com.bankaccount.dto.OperationDto;
 import com.bankaccount.entity.Account;
 import com.bankaccount.entity.CurrentAccount;
 import com.bankaccount.entity.Customer;

@@ -19,6 +19,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.bankaccount.dao.CustomerDao;
+import com.bankaccount.dto.CustomerDto;
 import com.bankaccount.entity.Customer;
 
 @RunWith(SpringRunner.class)
