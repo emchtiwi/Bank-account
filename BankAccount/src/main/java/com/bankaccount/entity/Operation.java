@@ -3,6 +3,7 @@ package com.bankaccount.entity;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
@@ -34,6 +35,8 @@ public abstract class Operation implements Serializable {
 	private Long number;
 	private double amount;
 	private Date operationDate;
+	@Column(name = "OPERATION_TYPE", nullable = false, updatable = false, insertable = false)
+	private String operationType;
 	@ManyToOne
 	@JoinColumn(name = "account")
 	private Account account;

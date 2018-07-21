@@ -14,13 +14,12 @@ public class OperationDto {
 	private Long number;
 	private double amount;
 	private Date operationDate;
-	private AccountDto account;
+	private String operationType;
 
-	public OperationDto(double amount, Date operationDate, AccountDto account) {
+	public OperationDto(double amount, Date operationDate) {
 		super();
 		this.amount = amount;
 		this.operationDate = operationDate;
-		this.account = account;
 	}
 
 }

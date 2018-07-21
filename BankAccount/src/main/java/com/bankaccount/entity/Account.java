@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
@@ -39,6 +40,8 @@ public class Account implements Serializable {
 	private double balance;
 	@OneToMany(mappedBy = "account", fetch = FetchType.EAGER)
 	private List<Operation> operations;
+	@Column(name = "ACCOUNT_TYPE", nullable = false, updatable = false, insertable = false)
+	private String accountType;
 	@ManyToOne()
 	@JoinColumn(name = "customer")
 	private Customer customer;

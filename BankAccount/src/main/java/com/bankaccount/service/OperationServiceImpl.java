@@ -38,7 +38,6 @@ public class OperationServiceImpl implements OperationService {
 	 */
 	@Override
 	public AccountDto deposit(final Long accountId, final double amount) throws OperationException {
-
 		Account account = accountDao.findByAccountId(accountId);
 		if (account == null) {
 			throw new OperationException("Account cannot be found");
@@ -76,7 +75,7 @@ public class OperationServiceImpl implements OperationService {
 	}
 
 	/**
-	 * See the history
+	 * Method to show all operations
 	 * 
 	 * @throws OperationException
 	 */
@@ -88,7 +87,6 @@ public class OperationServiceImpl implements OperationService {
 		}
 		List<Operation> operations = ListUtils.emptyIfNull(account.getOperations());
 		return (List<OperationDto>) modelMapper.mapCollection(operations, OperationDto.class);
-
 	}
 
 }
