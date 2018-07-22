@@ -3,7 +3,7 @@ Le but de cet exercice consiste à implémenter une application permettant la ge
 Cette application a été conçue et développée en JAVA/JEE avec l'utilisation du Spring boot, Web service(REST), JPA/Hibernate, Modelmapper(pour le mapping dto/entity), log4j(pour la journalisation), mockito(pour les tests de 2 couches controller/service).
 
 
-## Choix technique
+## Choix techniques
 * L'application se compose de 3 couches Controller/Service/DAO.
 * IOC est effectuée par Spring.
 * La couche web est basée sur Spring mvc.
