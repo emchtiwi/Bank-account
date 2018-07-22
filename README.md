@@ -1,6 +1,6 @@
 # Gestion de comptes bancaires
 Le but de cet exercice consiste à implémenter une application permettant la gestion de comptes bancaires.
-Cette application a été conçue et développée en JEE avec l'utilisation du Spring boot, Web service(REST), JPA/Hibernate, Modelmapper(pour le mapping dto/entity), log4j(pour la journalisation), mockito(pour les tests de 2 couches controller/service).
+Cette application a été conçue et développée en JAVA/JEE avec l'utilisation du Spring boot, Web service(REST), JPA/Hibernate, Modelmapper(pour le mapping dto/entity), log4j(pour la journalisation), mockito(pour les tests de 2 couches controller/service).
 
 
 ## Choix technique
@@ -15,6 +15,6 @@ Cette application a été conçue et développée en JEE avec l'utilisation du S
 * Ajouter un client.
 * Créer un compte bancaire (compte courant).
 * Réaliser 3 opérations :
-  * Effectuer un versement.
-  * Effectuer un retrait.
-  * Voir l'historique des opérations.
+  * US1 - Effectuer un versement.
+  * US2 - Effectuer un retrait.
+  * US3 - Voir l'historique des opérations.
