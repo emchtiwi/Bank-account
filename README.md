@@ -18,3 +18,5 @@ Cette application a été conçue et développée en JAVA/JEE avec l'utilisation
   * US1 - Effectuer un versement.
   * US2 - Effectuer un retrait.
   * US3 - Voir l'historique des opérations.
+
+![ScreenShot](https://image.ibb.co/iq6rwy/banque_Account.png)
