@@ -10,7 +10,7 @@ Cette application a été conçue et développée en JAVA/JEE avec l'utilisation
 * Le mapping objet-relationnel est basé sur Hibernate implémentation JPA.
 * Le mapping dto-entity est basé sur l'API modelmapper.
 * La journalisation est basée sur l'API log4j.
-* les méthodes métier sont générées à la compilation par Lombok.
+* Les méthodes métier sont générées à la compilation par Lombok.
 
 ## Fonctionnalités
 * Ajouter un client.
