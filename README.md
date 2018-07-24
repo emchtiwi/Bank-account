@@ -2,7 +2,6 @@
 Le but de cet exercice consiste à implémenter une application permettant la gestion de comptes bancaires.
 Cette application a été conçue et développée en JAVA/JEE avec l'utilisation du Spring boot, Web service(REST), JPA/Hibernate, Modelmapper(pour le mapping dto/entity), Log4j(pour la journalisation), Lombok, Mockito(pour les tests de 2 couches controller/service).
 
-
 ## Choix techniques
 * L'application se compose de 3 couches Controller/Service/DAO.
 * IOC est effectuée par Spring.
@@ -21,3 +20,10 @@ Cette application a été conçue et développée en JAVA/JEE avec l'utilisation
   * US3 - Voir l'historique des opérations.
 
 ![ScreenShot](https://image.ibb.co/iq6rwy/banque_Account.png)
+
+## Prérequis
+* Eclipse IDE for JEE Developers (oxygen.2).
+* Apache Maven.
+* Lombok (Vous devez configurer lombok avec eclipse https://projectlombok.org/setup/eclipse).
+* MySQL UI (MySql Workbench).
+* Mysql-connector.
